@@ -1,0 +1,53 @@
+.about {
+  background-color: var(--eastbay-color);
+  color: var(--white-color);
+  padding: 0;
+  max-height: 600px;
+  position: relative;
+  &__container {
+  }
+  &__text {
+    padding: 220px 0 128px 0;
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__quote {
+    font: var(--normal-book-font);
+    &:before,&:after{
+      display: none;
+    }
+  }
+  &__author {
+    align-self: flex-end;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    position: relative;
+    left: 40px;
+    &:before{
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 30px;
+      background-color: var(--white-color);
+      left: -50px;
+      top: 50%;
+    }
+  }
+  &__figure{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__img {
+    grid-column: 6/13;
+    img{
+      clip-path: polygon(24.5% 0, 100% 0, 75.7% 100%, 0 100%);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+:root {
+  // цвета
+  --black-color: #000;
+  --white-color: #fff;
+  --eastbay-color: #484283;
+  --accent-color: #f14f4f;
+  --accent-hover-color:#CC4949;
+  --text-color: #444B58;
+  --text-hover-color: #31343C;
+  --border-color: rgba(255,255,255,0.5);
+  --bg-color: #FFF4EE;
+  --cameo-color: #DBBBA9;
+
+  // отступы
+  --grid-gap: 20px;
+  --main-offset: 40px;
+
+  // шрифты
+  --font-family: "Intro", sans-serif;
+  --book-font-family: "Intro-Book", sans-serif;
+  --middle-high-font: 700 30px / 140% var(--font-family);
+  --small-font: 400 14px / 140% var(--font-family);
+  --normal-font: 400 16px / 140% var(--font-family);
+  --normal-book-font: 400 16px / 140% var(--book-font-family);
+
+  // container width
+  --container-width: 1210px;
+  --padding: 15px;
+}
+// // цвета
+// $black-color: #000;
+// $white-color: #fff;
+// $eastbay-color: #484283;
+// $accent-color: #f14f4f;
+// $text-color: #444B58;
+
+// // отступы
+// $grid-gap: 20px;
+// $main-offset: 40px;
+
+// // шрифты
+// $font-family: "Intro", sans-serif;
+// $middle-high-font: 700 30px / 140% $font-family;
+// $small-font: 400 14px / 140% $font-family;
+
+// // contaoner width
+// $container-width: 1140;
+// $padding: 20px

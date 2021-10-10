@@ -1,0 +1,65 @@
+<section class="catalog">
+  <div class="container catalog__container">
+    <h2 class="title catalog__title">Каталог</h2>
+    <div class="catalog__content grid">
+      <div class="catalog__sidebar">
+        <form class="catalog__filters">
+          <h3 class="catalog__subtitle">Подбор по параметрам</h3>
+          <div class="catalog__filter-price filter filter__price">
+            <div class="filter__title">Цена, грн</div>
+            <div class="filter__body">
+              <div class="input-wrapper">
+                <input type="text" class="filter__price-input" name="min" value="111" />
+                <input type="text" class="filter__price-input" name="max" value="222" />
+              </div>
+              <div class="range" id="slider"></div>
+            </div>
+          </div>
+          <div class="catalog__filter filter">
+            <div class="filter__title">Пол</div>
+            <div class="filter__body filter__inline">
+              <label class="custom-checkbox filter__label">
+                <input
+                  type="checkbox"
+                  name="gender"
+                  class="custom-checkbox__field filter__gender-input"
+                />
+                <span class="custom-checkbox__content">мужской</span>
+              </label>
+              <label class="custom-checkbox filter__label">
+                <input
+                  type="checkbox"
+                  name="gender"
+                  class="custom-checkbox__field filter__gender-input"
+                />
+                <span class="custom-checkbox__content">женский</span>
+              </label>
+            </div>
+          </div>
+          <div class="catalog__filter filter filter__size">
+            <div class="filter__title">Размер</div>
+            <div class="filter__body">
+              <div class="sizes">
+                @@for (let i = 34; i < 46; i++){
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="`+i+`">
+                      <span>`+i+`</span>
+                    </label>
+                }
+                
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--secondary">Применить</button>
+          <button type="reset" class="btn btn-reset">Сбросить</button>
+        </form>
+      </div>
+      <div class="catalog__items">
+        <div class="catalog__list">
+          @@loop('../parts/product.html','/parts/products.json') 
+        </div>
+        <button class="btn btn--primary show-more">Показать еще</button>
+      </div>
+    </div>
+  </div>
+</section>
