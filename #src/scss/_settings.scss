@@ -54,6 +54,10 @@ a {
 .error {
   border: 2px #ff4019 solid !important;
 }
+._bgcolor{
+  background-color: var(--eastbay-color);
+  color: var(--white-color);
+}
 ._ibg {
   position: relative;
   img {

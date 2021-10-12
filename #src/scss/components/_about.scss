@@ -1,11 +1,7 @@
 .about {
-  background-color: var(--eastbay-color);
-  color: var(--white-color);
   padding: 0;
   max-height: 600px;
   position: relative;
-  &__container {
-  }
   &__text {
     padding: 220px 0 128px 0;
     grid-column: 1/5;

@@ -1,0 +1,32 @@
+.team {
+  position: relative;
+  padding: 60px 0;
+  z-index: 5;
+  &__figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__container {}
+  &__title {}
+  &__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 20px;
+    z-index: 5;
+    position: relative;
+  }
+  &__item {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    &--img {
+      border-radius: 4px;
+      overflow: hidden;
+
+    }
+    &--name {}
+    &--position {}
+  }
+}
+
