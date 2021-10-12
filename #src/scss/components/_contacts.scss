@@ -4,6 +4,28 @@
     grid-template-columns: 5fr 7fr;
   }
   &__info {}
+  &__item {}
+  &__subtitle {}
+  &__phone {}
+  &__address {}
   &__map {}
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  &__item {}
+  &__link {
+    display: flex;
+    color: var(--eastbay-color);
+    font-size: 35px;
+  }
+}
+.icon {
+}
+.icon-vk {
+}
+.icon-insta {
 }
 
