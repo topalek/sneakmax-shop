@@ -1,0 +1,9 @@
+.contacts {
+  background-color: #F3F6F6;
+  &__container {
+    grid-template-columns: 5fr 7fr;
+  }
+  &__info {}
+  &__map {}
+}
+

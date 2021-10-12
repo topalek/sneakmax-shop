@@ -52,3 +52,34 @@ if (slider != "undefined") {
     });
   });
 }
+
+class Accordion{
+  constructor(el){
+    this.$el = el
+    this.title = el.querySelector('.faq__item--title')
+    this.content = el.querySelector('.faq__item--content')
+    this.events()
+  }
+  events(){
+    console.log('events');
+    this.$el.addEventListener('click',e=>{
+      this.$el.classList.toggle('active')
+      if (this.$el.classList.contains('active')) {
+        this.open()
+      }else{
+        this.close()
+      }
+    })
+  }
+  open(){
+    this.content.style.maxHeight = this.content.scrollHeight *2 +"px";
+  }
+  close(){
+    this.content.style.maxHeight = null;
+  }
+}
+const faqItems = document.querySelectorAll('.faq__item')
+
+faqItems.forEach(faq =>{
+  new Accordion(faq)
+})
