@@ -1,6 +1,5 @@
 @@include('./nouislider.min.js')
 @@include('./quiz.js')
-// @@include('./InstagramFeed.min.js')
 
 function testWebP(callback) {
   var webP = new Image();
@@ -85,18 +84,14 @@ faqItems.forEach(faq =>{
   new Accordion(faq)
 })
 
-function initMap() {
-  const myLatLng = { lat: -25.363, lng: 131.044 };
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: myLatLng,
-  });
+ymaps.ready(init);
 
-  new google.maps.Marker({
-    position: myLatLng,
-    map,
-    title: "Hello World!",
-  });
+function init(){
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+        center: [55.76, 37.64],
+        zoom: 7
+    });
 }
 // (function(){
 //         new InstagramFeed({
