@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SneakMax shop</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+  <div class="site-container">
+    <header class="header _bgcolor">
+  <div class="container header__container">
+    <div class="header__wrap grid">
+      <div class="header__left">
+        <a class="logo header__logo">SneakMax</a>
+      </div>
+      <div class="header__right">
+        <nav class="nav header__nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Подбор товара</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Наша команда</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Доставка и оплата</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="cart header__cart">
+          <button class="btn-reset btn cart__btn">
+            <i class="icon icon-cart"></i>
+            <div class="cart__count">1</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <span class="hero__bg-text" aria-hidden="true">SneakMax</span>
+  <div class="container hero__container">
+    <h1 class="hero__title">
+      Кроссовки известных брендов
+      с доставкой по России и СНГ
+    </h1>
+    <p class="hero__descr">
+      Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким ценам
+    </p>
+    <button class="btn btn--primary js-move-to">Перейти к покупкам</button>
+  </div>
+</section>
+
+      <section class="catalog">
+  <div class="container catalog__container">
+    <h2 class="title catalog__title">Каталог</h2>
+    <div class="catalog__content grid">
+      <div class="catalog__sidebar">
+        <form class="catalog__filters">
+          <h3 class="catalog__subtitle">Подбор по параметрам</h3>
+          <div class="catalog__filter-price filter filter__price">
+            <div class="filter__title">Цена, грн</div>
+            <div class="filter__body">
+              <div class="input-wrapper">
+                <input type="text" class="filter__price-input" name="min" value="111" />
+                <input type="text" class="filter__price-input" name="max" value="222" />
+              </div>
+              <div class="range" id="slider"></div>
+            </div>
+          </div>
+          <div class="catalog__filter filter">
+            <div class="filter__title">Пол</div>
+            <div class="filter__body filter__inline">
+              <label class="custom-checkbox filter__label">
+                <input
+                  type="checkbox"
+                  name="gender"
+                  class="custom-checkbox__field filter__gender-input"
+                />
+                <span class="custom-checkbox__content">мужской</span>
+              </label>
+              <label class="custom-checkbox filter__label">
+                <input
+                  type="checkbox"
+                  name="gender"
+                  class="custom-checkbox__field filter__gender-input"
+                />
+                <span class="custom-checkbox__content">женский</span>
+              </label>
+            </div>
+          </div>
+          <div class="catalog__filter filter filter__size">
+            <div class="filter__title">Размер</div>
+            <div class="filter__body">
+              <div class="sizes">
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="34">
+                      <span>34</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="35">
+                      <span>35</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="36">
+                      <span>36</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="37">
+                      <span>37</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="38">
+                      <span>38</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="39">
+                      <span>39</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="40">
+                      <span>40</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="41">
+                      <span>41</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="42">
+                      <span>42</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="43">
+                      <span>43</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="44">
+                      <span>44</span>
+                    </label>
+                
+                    <label class="filter__size-label">
+                      <input type="checkbox" class="filter__size-input" value="45">
+                      <span>45</span>
+                    </label>
+                
+                
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--secondary">Применить</button>
+          <button type="reset" class="btn btn-reset">Сбросить</button>
+        </form>
+      </div>
+      <div class="catalog__items">
+        <div class="catalog__list">
+          <article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="men's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="1"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h3>
+  <div class="price product__price">109.95 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="men's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="2"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Mens Casual Premium Slim Fit T-Shirts ">Mens Casual Premium Slim Fit T-Shirts </h3>
+  <div class="price product__price">22.3 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="men's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="3"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Mens Cotton Jacket">Mens Cotton Jacket</h3>
+  <div class="price product__price">55.99 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="men's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="4"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Mens Casual Slim Fit">Mens Casual Slim Fit</h3>
+  <div class="price product__price">15.99 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="jewelery" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="5"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet">John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet</h3>
+  <div class="price product__price">695 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="jewelery" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="6"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Solid Gold Petite Micropave ">Solid Gold Petite Micropave </h3>
+  <div class="price product__price">168 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="jewelery" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="7"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="White Gold Plated Princess">White Gold Plated Princess</h3>
+  <div class="price product__price">9.99 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="jewelery" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="8"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Pierced Owl Rose Gold Plated Stainless Steel Double">Pierced Owl Rose Gold Plated Stainless Steel Double</h3>
+  <div class="price product__price">10.99 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="electronics" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="9"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="WD 2TB Elements Portable External Hard Drive - USB 3.0 ">WD 2TB Elements Portable External Hard Drive - USB 3.0 </h3>
+  <div class="price product__price">64 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" alt="women's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="15"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</h3>
+  <div class="price product__price">56.99 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="women's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="16"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h3>
+  <div class="price product__price">29.95 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" alt="women's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="17"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Rain Jacket Women Windbreaker Striped Climbing Raincoats">Rain Jacket Women Windbreaker Striped Climbing Raincoats</h3>
+  <div class="price product__price">39.99 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" alt="women's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="18"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="MBJ Women's Solid Short Sleeve Boat Neck V ">MBJ Women's Solid Short Sleeve Boat Neck V </h3>
+  <div class="price product__price">9.85 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" alt="women's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="19"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="Opna Women's Short Sleeve Moisture">Opna Women's Short Sleeve Moisture</h3>
+  <div class="price product__price">7.95 &#8372;</div>
+</article>
+<article class="product">
+  <div class="product__img _ibg">
+    <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt="women's clothing" />
+    <div class="product__actions">
+      <a href="" class="action-link product__link"><i class="icon icon-eye"></i></a>
+      <a href="" class="action-link to-cart" data-item="20"><i class="icon icon-cart"></i></a>
+    </div>
+  </div>
+  <h3 class="product__title" title="DANVOUY Womens T Shirt Casual Cotton Short">DANVOUY Womens T Shirt Casual Cotton Short</h3>
+  <div class="price product__price">12.99 &#8372;</div>
+</article>
+ 
+        </div>
+        <button class="btn btn--primary show-more">Показать еще</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="about _bgcolor">
+  <img src="img/about-figure.svg" class="about__figure" aria-hidden="true">
+  <div class="container about__container grid">
+    <div class="about__text">
+      <h2 class="title about__title">Пара слов о нас</h2>
+        <q class="about__quote">
+          Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через спорт
+          мы можем менять жизни. В том числе с помощью воодушевляющих историй
+          спортсменов. Чтобы помочь тебе подняться и двигаться вперед.
+        </q>
+        <cite class="about__author"> SneakMax </cite>
+    </div>
+    <div class="about__img _ibg">
+      <img src="img/about-img.jpg" alt="about"  aria-hidden="true"/>
+    </div>
+  </div>
+</section>
+
+      <section class="quiz">
+  <div class="container quiz__container">
+    <div class="quiz-wrapp">
+      <h2 class="title quiz__title">Мы подберем идеальную пару для вас</h2>
+      <p class="quiz__subtitle subtitle">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </p>  
+      <form action="https://jsonplaceholder.typicode.com/posts" id="quiz"></form>
+    </div>
+  </div>
+</section><div class="quiz-item"></div>
+      <section class="team _bgcolor">
+  <img src="/img/team-figure.svg" class="team__figure" aria-hidden="false">
+  <div class="container team__container">
+    <h2 class="title team__title">Наша команда</h2>
+    <div class="grid team__list">
+      <div class="team__item">
+        <img src="/img/team-1.jpg" alt="" class="team__item--img">
+        <div class="team__item--name">Sam Smith</div>
+        <div class="team__item--position">ADmin</div>
+      </div>
+      <div class="team__item">
+        <img src="/img/team-2.jpg" alt="" class="team__item--img">
+        <div class="team__item--name">Sam Smith</div>
+        <div class="team__item--position">ADmin</div>
+      </div>
+      <div class="team__item">
+        <img src="/img/team-3.jpg" alt="" class="team__item--img">
+        <div class="team__item--name">Sam Smith</div>
+        <div class="team__item--position">ADmin</div>
+      </div>
+      <div class="team__item">
+        <img src="/img/team-4.jpg" alt="" class="team__item--img">
+        <div class="team__item--name">Sam Smith</div>
+        <div class="team__item--position">ADmin</div>
+      </div>
+      <div class="team__item">
+        <img src="/img/team-5.jpg" alt="" class="team__item--img">
+        <div class="team__item--name">Sam Smith</div>
+        <div class="team__item--position">ADmin</div>
+      </div>
+      <div class="team__item">
+        <img src="/img/team-6.jpg" alt="" class="team__item--img">
+        <div class="team__item--name">Sam Smith</div>
+        <div class="team__item--position">ADmin</div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="faq">
+  <div class="container faq__container">
+    <h2 class="title faq__title">Часто задаваемые вопросы</h2>
+    <div class="faq__list">
+      <div class="faq__item">
+        <div class="faq__item--title"><span>Вопрос 1</span><span class="faq__toggle"></span></div>
+        <div class="faq__item--content">А это ответ 1: в комплексе функционируют 6 детских садов с площадками, воспитателями и всякими другими людьми</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__item--title"><span>Вопрос 2</span><span class="faq__toggle"></span></div>
+        <div class="faq__item--content">А это ответ 2: в комплексе функционируют 6 детских садов с площадками, воспитателями и всякими другими людьми.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__item--title"><span>Вопрос 3</span><span class="faq__toggle"></span></div>
+        <div class="faq__item--content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem dolores saepe blanditiis a nam, laboriosam voluptatum et. Nemo molestiae fugiat porro labore, animi illo nesciunt obcaecati in iste assumenda!</p>
+          <p>Nam, quas aspernatur nemo pariatur nostrum omnis amet, ex libero maiores velit quae deserunt at laborum error? Vero asperiores ut, ad alias dolor nam iste aliquid, repellendus eveniet reprehenderit deleniti?</p>
+          <p>Vel ab sit quae dignissimos officia natus sint odit perferendis, officiis nulla ex ratione repudiandae excepturi fuga omnis nobis magnam voluptate quas ducimus, alias rerum ut velit. Facilis, blanditiis fugiat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="contacts">
+  <div class="container contacts__container grid">
+    <div class="contacts__info">
+      <h2 class="title">Контакты</h2>
+      <address class="contacts__item">
+        <h3 class="contacts__subtitle"><span>Главный офис</span>
+          <span class="tooltip">
+            <button class="tooltip__btn">?</button>
+            <span class="tooltip__text">Адрес и телефон для корреспонденции, инвесторов. Вопросы о доставке, качестве обслуживания и товара просьба задавать в отдел продаж</span>
+          </span>
+        </h3>
+        <a href="tel:+78007898989" class="contacts__phone">+7 800 789 89 89</a>
+        <div class="contacts__address">г. Санкт-Петербург, Комсомольская, 43 к1</div>
+      </address>
+      <address class="contacts__item">
+        <h3 class="contacts__subtitle">Отдел продаж</h3>
+        <a href="tel:+78007898989" class="contacts__phone">+7 800 789 89 89</a>
+        <div class="contacts__address">г. Санкт-Петербург, Комсомольская, 43 к1</div>
+      </address>
+      <ul class="social">
+        <li class="social__item"><a href="" class="social__link"><i class="icon icon-vk"></i></a></li>
+        <li class="social__item"><a href="" class="social__link"><i class="icon icon-insta"></i></a></li>
+      </ul>
+    </div>
+    <div class="contacts__map" id="map"></div>
+  </div>
+</section>
+      <section class="insta">
+  <div class="container insta__container grid">
+    <div class="insta__contacts">
+      <form action="" class="inata__form form _bgcolor">
+        <h3 class="title insta__title">Есть вопросы?</h3>
+        <p class="insta__subtitle">Заполните форму и наш менеджер свяжется с вами</p>
+        <input type="text" placeholder="Ваше имя" name="name" class="form__input">
+        <input type="email"   placeholder="Номер телефона" name="phone" class="form__input">
+        <button type="submit" class="btn btn--primary">Отправить</button>
+      </form>
+    </div>
+    <div class="insta__photo">
+      <a href="" class="insta__link"><img src="./img/instagram_logo.svg" alt=""></a>
+      <div class="insta__content">
+        <a href="" class="insta__item _ibg">
+          <img src="https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80" alt="">
+        </a>
+        <a href="" class="insta__item _ibg">
+        <img src="https://images.unsplash.com/photo-1634144646738-809a0f8897c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80" alt="">
+        </a>
+        <a href="" class="insta__item _ibg">
+        <img src="https://images.unsplash.com/photo-1633113090205-cc1ac795b5f9?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="">
+        </a>
+
+        <a href="" class="insta__item _ibg">
+        <img src="https://images.unsplash.com/photo-1634125486933-df0e64f5bbca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
+        </a>
+
+        <a href="" class="insta__item _ibg">
+        <img src="https://images.unsplash.com/photo-1634163250704-1f7aa020f281?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer__container grid">
+    <a class="logo footer__logo">SneakMax</a>
+    <nav class="nav footer__nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Подбор товара</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Наша команда</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Доставка и оплата</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4A4HBqInOBY7LJKw62idY8KJRdRB14pw&callback=initMap&v=weekly&channel=2"
+      async
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
