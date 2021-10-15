@@ -3,11 +3,37 @@
   &__container {
     grid-template-columns: 5fr 7fr;
   }
-  &__info {}
-  &__item {}
-  &__subtitle {}
-  &__phone {}
-  &__address {}
+
+  &__item {
+    font-style: normal;
+    margin-bottom: var(--main-offset);
+  }
+  &__subtitle { 
+    font-family: "Intro-Book";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #B2B5BB;
+    margin-bottom: var(--main-offset);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  &__phone {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    display: flex;
+    &:visited,&:active{
+      color: var(--text-color);
+    }
+  }
+  &__address {
+    font-family: "Intro-Book";
+    font-size: 18px;
+  }
   &__map {}
 }
 

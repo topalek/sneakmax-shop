@@ -1,4 +1,3 @@
-
 @import "vendor";
 @import "mixins";
 @import "icons";
@@ -16,6 +15,8 @@
 @import "./components/team";
 @import "./components/faq";
 @import "./components/contacts";
+@import "./components/insta";
+@import "./components/footer";
 
 // маленькие
 @import "./components/nav";
@@ -36,6 +37,64 @@ a {
   flex-direction: row;
   gap: 15px;
 }
+.tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: initial;
+  z-index: 1;
+  &__btn {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 2px 4px 10px rgba(0, 13, 84, 0.2);
+    border-radius: 100%;
+    border: none;
+    font-weight: bold;
+    &:hover + .tooltip__text,
+    &:focus + .tooltip__text {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+  &__text {
+    position: absolute;
+    bottom: calc(100% + 14px);
+    left: -14px;
+    background: #ffffff;
+    box-shadow: 2px 4px 10px rgba(0, 13, 84, 0.4);
+    padding: 10px 20px;
+    min-width: 420px;
+    font-family: "Intro-Book";
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+      visibility 0.3s ease-in-out;
+    z-index: 5;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 12px;
+      width: 24px;
+      height: 24px;
+      background: inherit;
+      border-radius: 20px 3px;
+      transform: rotate(-45deg);
+      z-index: -1;
+    }
+  }
+}
+
 .box {
   display: flex;
   justify-content: center;

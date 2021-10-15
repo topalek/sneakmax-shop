@@ -1,6 +1,4 @@
 .quiz {
-  &__container {
-  }
   &__title {
     margin-bottom: 20px;
   }
@@ -26,6 +24,7 @@
     }
     &__input {
       padding: 20px;
+      border-radius: 4px;
       color: var(--text-color);
       border: 1px solid transparent;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.02);
@@ -88,10 +87,6 @@
     }
     .quiz__steps {
       display: none;
-    }
-  }
-  &-3 {
-    .items {
     }
   }
 }

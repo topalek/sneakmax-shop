@@ -1,0 +1,77 @@
+.insta {
+  &__container {}
+  &__contacts {
+    grid-column: 1/5;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    margin-top: 0;
+    text-align: center;
+    font-family: "Intro-Book";
+    font-size: 16px;
+    margin-bottom: var(--main-offset);
+  }
+  &__photo {
+    grid-column: 5/13;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__link {
+    display: flex;
+    width: 158px;
+    height: 56px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+    width: 100%;
+  }
+  &__item{
+      display: flex;
+      border-radius: 4px;
+      width: 100%;
+      padding-bottom: 100%;
+      overflow: hidden;
+    &:nth-child(5){
+      grid-column: 2/4;
+      grid-row: 1/3;
+    }
+  }
+}
+
+.inata {
+  &__form {
+    border-radius: 4px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 10px;
+  &__input {
+    border-radius: 4px;
+    padding: 20px;
+    border: none;
+    &:focus,&:active{
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.btn {
+}
+.btn--primary {
+}
