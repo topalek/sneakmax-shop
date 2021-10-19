@@ -182,8 +182,10 @@ gulp.task("webfonts", () => {
  src(path.src.webFonts).pipe(woff()).pipe(dest(path.build.fontsFolder));
  return src(path.src.webFonts).pipe(woff2()).pipe(dest(path.build.fontsFolder));
 });
-
-const build = series(clean,images, copyFonts, css, html, js);
+const data = () => {
+  return src("./#src/data/**/*").pipe(dest(path.build.html+'data/'));
+};
+const build = series(clean,images, copyFonts, css,data, html, js);
 exports.font2styles = font2styles;
 exports.build = build;
 exports.default = series(build, serve); 

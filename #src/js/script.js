@@ -1,5 +1,6 @@
 @@include('./nouislider.min.js')
 @@include('./quiz.js')
+@@include('./products.js')
 
 function testWebP(callback) {
   var webP = new Image();
