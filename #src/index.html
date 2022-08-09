@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SneakMax shop</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SneakMax shop</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="">
   <div class="site-container">
     @@include('partials/header.html')
     <main class="main">
       @@include('partials/hero.html')
       @@include('partials/catalog.html')
+        <button data-slidetoggle="#box1">Toggle Box 1</button>
+  <div id="box1">
+    Hello World<br> This is dynamic content<br> The actual height won't be<br> known ahead of time
+  </div>
+
+  <button data-slidetoggle="#box2">Toggle Box 2</button>
+  <div id="box2">
+    Hello World<br> This is dynamic content<br> The actual height won't be<br> known ahead of time
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores atque natus debitis molestiae dolorem! Animi sint enim veniam tempora distinctio quo voluptatibus quam fugit quisquam. Provident, facere! Dolorum, inventore odit.</p>
+    <p>Veniam ipsa nulla voluptas nesciunt doloremque id facilis? Molestiae alias non nam molestias repellat debitis labore, odio ipsa ipsum quis hic itaque, iusto voluptatum pariatur. Odit unde fugiat voluptate tenetur.</p>
+    <p>Culpa quam dolore fuga neque sunt itaque, consequatur recusandae facilis quo maxime minus expedita ea laboriosam error, ex iusto. Nemo animi inventore, incidunt ducimus est laudantium placeat minus adipisci quas?</p>
+    <p>Accusantium alias incidunt pariatur ducimus, doloremque culpa quae? Placeat ad maiores voluptatibus adipisci magni a sequi distinctio sit. Ipsam praesentium impedit doloremque. Vel, placeat molestiae maiores optio repudiandae minus ipsa.</p>
+    <p>Culpa, quo enim voluptatum voluptate, soluta harum obcaecati dolorum nesciunt impedit ex iure eligendi odio. Architecto repellat eum voluptatum obcaecati praesentium perferendis ullam, ab officia nobis assumenda quo labore quam.</p>
+  </div>
       @@include('partials/about.html')
       @@include('partials/quiz.html')
       @@include('partials/team.html')
@@ -22,15 +38,16 @@
     </main>
     @@include('partials/footer.html')
   </div>
-  <div class="modal">
-	<div class="modal__container" role="dialog" aria-modal="true" data-graph-target="first">
-		<button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
-		<div class="modal-content">
-			<!-- контент модального окна -->
-		</div>
-	</div>
-</div>
+  <div class="modal" data-dismiss="modal">
+    <div class="modal__container" role="dialog" aria-modal="true" data-target="first">
+      <button class="btn-reset modal__close" aria-label="Закрыть модальное окно" data-dismiss="modal">
+        &times;
+      </button>
+      <div class="modal-content"></div>
+    </div>
+  </div>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

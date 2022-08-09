@@ -44,8 +44,8 @@ function getCatalogItemhtml(item) {
   <div class="product__img _ibg">
     <img src="${item.mainImage}" alt="${item.title}" />
     <div class="product__actions">
-      <button class="action-link show-product icon icon-eye" data-action="modal" data-id="${item.id}"></button>
-      <button class="action-link to-cart icon icon-cart" data-action="cart" data-id="${item.id}"></button>
+      <button class="action-link show-product icon icon-eye" data-toggle="modal" data-id="${item.id}"></button>
+      <button class="action-link to-cart icon icon-cart" data-toggle="modal" data-id="${item.id}"></button>
     </div>
   </div>
   <h3 class="product__title" title="${item.title}">${item.title}</h3>
